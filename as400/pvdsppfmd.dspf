@@ -1,0 +1,99 @@
+     A*%%TS  SD  20050220  183631  SQSYZ       REL-V5R2M0  5722-WDS
+     A*%%EC
+     A                                      DSPSIZ(27 132 *DS4)
+     A          R D01
+     A*%%TS  SD  20050220  183631  SQSYZ       REL-V5R2M0  5722-WDS
+     A                                      CA03(03 'Exit')
+     A                                      CA12(12 'Cancel')
+     A                                      CA24(24 'More')
+     A                                      PAGEUP(61 'Page Up')
+     A                                      PAGEDOWN(62 'Page Down')
+     A                                      CA19(19 'Left')
+     A                                      CA20(20 'Right')
+     A                                      CA23(23 'Block/Unblock')
+     A                                      CA10(10 'Hex (Side by side)')
+     A  81                                  CA11(11 'Hex (Top bottom)')
+     A                                      CF16(16 'Find')
+     A                                      CA17(17 'On/Off ASCII Mode')
+     A                                      CSRLOC(WAROW      WACLM)
+     A            WAROW          3S 0H
+     A            WACLM          3S 0H
+     A                                  1 27'Display Physical File Member - DBC-
+     A                                      S Enabled'
+     A                                      DSPATR(HI)
+     A                                  2  2'File . . . . . . :'
+     A            WFIL          10A  O  2 23
+     A                                  2 43'Library  . . . . :'
+     A            WLIB          10A  O  2 64
+     A                                  3  2'Member . . . . . :'
+     A            WMBR          10A  O  3 23
+     A                                  3 43'Record . . . . . :'
+     A  55                                  DSPATR(ND)
+     A            WLIN          10A  O  3 64
+     A  55                                  DSPATR(ND)
+     A                                  4  2'Control  . . . . .'
+     A  55                                  DSPATR(ND)
+     A            WCTL          11A  B  4 23
+     A  55                                  DSPATR(ND)
+     A  55                                  DSPATR(PR)
+     A                                  4 43'Column . . . . . :'
+     A  55                                  DSPATR(ND)
+     A            WCLM          10A  O  4 64
+     A  55                                  DSPATR(ND)
+     A                                  5  2'Find . . . . . . .'
+     A  55                                  DSPATR(ND)
+     A            WFND          40A  B  5 23
+     A  55                                  DSPATR(ND)
+     A  55                                  DSPATR(PR)
+     A                                      CHECK(LC)
+     A            WRUL         130A  O  6  2DSPATR(HI)
+     A            WL01         131A  O  7  1
+     A            WL02         131A  O  8  1
+     A            WL03         131A  O  9  1
+     A            WL04         131A  O 10  1
+     A            WL05         131A  O 11  1
+     A            WL06         131A  O 12  1
+     A            WL07         131A  O 13  1
+     A            WL08         131A  O 14  1
+     A            WL09         131A  O 15  1
+     A            WL10         131A  O 16  1
+     A            WL11         131A  O 17  1
+     A            WL12         131A  O 18  1
+     A            WL13         131A  O 19  1
+     A            WL14         131A  O 20  1
+     A            WL15         131A  O 21  1
+     A            WL16         131A  O 22  1
+     A            WL17         131A  O 23  1
+     A            WL18         131A  O 24  1
+     A            WSTS          50A  O 25  2DSPATR(HI)
+     A            WREM           7A  O 25125DSPATR(HI)
+     A  51                             26  2'F3=Exit   F12=Cancel   F19=Left   -
+     A                                      F20=Right   F24=More keys'
+     A                                      COLOR(BLU)
+     A  52                             26  2'F10=Display hexadecimal   F23=Bloc-
+     A                                      k/Unblock   F24=More keys'
+     A                                      COLOR(BLU)
+     A  53                             26  2'F14=Specify find options   F16=Fin-
+     A                                      d   F24=More keys'
+     A                                      COLOR(BLU)
+     A  54                             26  2'F10=Display character   F11=Displa-
+     A                                      y over/under   F24=More keys'
+     A                                      COLOR(BLU)
+     A  54                             26  2'F10=Display character   F11=Displa-
+     A                                      y side-by-side   F24=More keys'
+     A                                      COLOR(BLU)
+     A  55                             26  2'F3=Exit   F12=Cancel'
+     A                                      COLOR(BLU)
+     A                                 25 67'X:'
+     A                                      COLOR(BLU)
+     A                                      DSPATR(ND)
+     A            XROW           3  0O 25 70COLOR(BLU)
+     A                                      DSPATR(ND)
+     A                                 25 75'Y:'
+     A                                      COLOR(BLU)
+     A                                      DSPATR(ND)
+     A            XCOL           3  0O 25 78COLOR(BLU)
+     A                                      DSPATR(ND)
+     A                                 25 92'ASCII MODE'
+     A                                      DSPATR(HI)
+     A N77                                  DSPATR(ND)
