@@ -37,7 +37,7 @@ Additionally, if you want to translate ASCII on the fly, use F23. Here's how:
 2. Choose your top left corner on the records display and hit F23.
 3. Then choose your bottom right corner on the records display and hit F23.
 
-The ASCII data in that square section will then be converted to EBCDIC and you should be able to read it on disply.
+The ASCII data in that square section will then be converted to EBCDIC and you should be able to read it on display.
 
 ## Additional Notes
 This program was originally written to run on V5R2 using 5250 display in code page 037 and code page 1388. You will require ILE C compiler in addition to RPG and DDS. In order to display DBCS your terminal needs be configured to run in code page 935 (simplified Chinese). This should also work for Japanese code page but I've never personally tried.
